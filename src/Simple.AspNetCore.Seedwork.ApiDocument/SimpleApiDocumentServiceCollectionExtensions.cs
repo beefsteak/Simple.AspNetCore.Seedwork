@@ -32,8 +32,14 @@ namespace Microsoft.Extensions.DependencyInjection
                 {
                     options.SwaggerDoc(name, info);
                 }
-                if (!string.IsNullOrWhiteSpace(simpleApiDocumentOptions.IncludeXmlCommentsFilePath))
-                    options.IncludeXmlComments(simpleApiDocumentOptions.IncludeXmlCommentsFilePath, true);
+
+                if (simpleApiDocumentOptions.IncludeXmlCommentsFilePaths != null)
+                {
+                    foreach (var includeXmlCommentsFilePath in simpleApiDocumentOptions.IncludeXmlCommentsFilePaths)
+                    {
+                        options.IncludeXmlComments(includeXmlCommentsFilePath, true);
+                    }
+                }
                 options.OperationFilter<AddActionAuthorizeDescriptionOperationFilter>();
                 options.OperationFilter<AddBadRequestResponseDescriptionIfNeedOperationFilter>();
                 options.OperationFilter<RemoveOkResponseDescriptionIfNotNeedOperationFilter>();

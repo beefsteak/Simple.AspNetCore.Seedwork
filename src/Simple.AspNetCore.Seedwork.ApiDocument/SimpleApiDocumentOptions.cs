@@ -14,7 +14,7 @@ namespace Simple.AspNetCore.Seedwork.ApiDocument
     {
         public IEnumerable<(string name, Info info)> Docs { set; get; }
 
-        public string IncludeXmlCommentsFilePath { set; get; }
+        public IEnumerable<string> IncludeXmlCommentsFilePaths { set; get; }
 
         public Func<IEnumerable<ApiDescription>, ApiDescription> Resolver { set; get; }
 
