@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Simple.AspNetCore.Seedwork.ApiDocument</AssemblyName>
     <RootNamespace>Simple.AspNetCore.Seedwork.ApiDocument</RootNamespace>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.9</Version>
+    <Version>1.1.0</Version>
     <PackageProjectUrl>https://github.com/beefsteak/Simple.AspNetCore.Seedwork</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/beefsteak/Simple.AspNetCore.Seedwork/master/orange.png</PackageIconUrl>
     <PackageLicenseExpression></PackageLicenseExpression>
